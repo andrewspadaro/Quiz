@@ -7,7 +7,7 @@
 //store scores to local computer
 
 var timeLeft = 30;
-    var elem = document.getElementById('timer');
+    var elem = document.getElementById("timer");
     
     var timerId = setInterval(countdown, 1000);
     
@@ -16,7 +16,40 @@ var timeLeft = 30;
         clearTimeout(timerId);
         doSomething();
       } else {
-        elem.innerHTML = timeLeft + ' seconds remaining';
+        elem.innerHTML = timeLeft + " seconds remaining";
         timeLeft--;
       }
     }
+myQuestions = [
+        {
+          question: "?",
+          answers: {
+            a: "",
+            b: "",
+            c: "",
+            d: ""
+          },
+          correctAnswer: ""
+        },
+        {
+          question: "?",
+          answers: {
+            a: "",
+            b: "",
+            c: "",
+            d: ""
+          },
+          correctAnswer: ""
+        },
+        {
+          question: "?",
+          answers: {
+            a: "",
+            b: "",
+            c: "",
+            d: ""
+          },
+          correctAnswer: ""
+        }
+      ];
+
