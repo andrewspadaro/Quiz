@@ -6,50 +6,57 @@
 //create a high score page with prompt to enter initials
 //store scores to local computer
 
-var timeLeft = 30;
-    var elem = document.getElementById("timer");
-    
-    var timerId = setInterval(countdown, 1000);
-    
-    function countdown() {
-      if (timeLeft == -1) {
-        clearTimeout(timerId);
-        doSomething();
-      } else {
-        elem.innerHTML = timeLeft + " seconds remaining";
-        timeLeft--;
-      }
-    }
-myQuestions = [
-        {
-          question: "?",
-          answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
-          },
-          correctAnswer: ""
-        },
-        {
-          question: "?",
-          answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
-          },
-          correctAnswer: ""
-        },
-        {
-          question: "?",
-          answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
-          },
-          correctAnswer: ""
+
+var startBtn = document.getElementById("button");
+startBtn.addEventListener("click", function() {
+    var timeLeft = 60;
+        var elem = document.getElementById("timer");
+        
+        var timerId = setInterval(countdown, 1000);
+        
+        function countdown() {
+          if (timeLeft == -1) {
+            clearTimeout(timerId);
+            doSomething();
+          } else {
+            elem.innerHTML = timeLeft + " seconds remaining";
+            timeLeft--;
+          }
         }
+});
+    
+    
+    
+    
+
+
+myQuestions = [
+    {
+        question: "is this question 1",
+         incorrect: [
+          "2",
+          "2",
+          "2",
+      ],
+        correctAnswer: "question 1"
+  },
+  {
+    question: "is this question 2",
+     incorrect: [
+      "1",
+      "1",
+      "1",
+  ],
+    correctAnswer: "question 2"
+},
+        {
+          question: "is this question 3",
+           incorrect: [
+            "2",
+            "2",
+            "2",
+        ],
+          correctAnswer: "question 3"
+    }
       ];
 
