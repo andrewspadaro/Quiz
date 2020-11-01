@@ -23,6 +23,25 @@ startBtn.addEventListener("click", function() {
             timeLeft--;
           }
         }
+
+var questionSection = document.getElementById("p1");
+questionSection.innerHTML = ""
+questionSection.innerHTML = myQuestions[0].question
+
+var answer1 = document.getElementById("answer1");
+var answer2 = document.getElementById("answer2");
+var answer3 = document.getElementById("answer3");
+var answer4 = document.getElementById("answer4");
+
+var possibleAnswers = document.getElementById("possibleAnswers")
+possibleAnswers.innerHTML = "<li>" + myQuestions[0].incorrect[0] + "</li>"
+possibleAnswers.innerHTML += "<li>" + myQuestions[0].incorrect[1] + "</li>"
+possibleAnswers.innerHTML += "<li>" + myQuestions[0].incorrect[2] + "</li>"
+
+
+
+
+
 });
     
     
