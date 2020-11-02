@@ -37,13 +37,11 @@ var possibleAnswers = document.getElementById("possibleAnswers")
 possibleAnswers.innerHTML = "<li>" + myQuestions[0].incorrect[0] + "</li>"
 possibleAnswers.innerHTML += "<li>" + myQuestions[0].incorrect[1] + "</li>"
 possibleAnswers.innerHTML += "<li>" + myQuestions[0].incorrect[2] + "</li>"
-
-
-
-
+possibleAnswers.innerHTML += "<li>" + myQuestions[0].correctAnswer[0] + "</li>"
 
 });
-    
+
+
     
     
     
@@ -51,22 +49,22 @@ possibleAnswers.innerHTML += "<li>" + myQuestions[0].incorrect[2] + "</li>"
 
 myQuestions = [
     {
-        question: "is this question 1",
+        question: "What are the 4 main ingredients in beer?",
          incorrect: [
-          "2",
-          "2",
-          "2",
+          "carrots, potatoes, corn, and broccoli",
+          "soda, rice, chips, and salt",
+          "popcorn, peanuts, dirty socks, and coffee beans",
       ],
-        correctAnswer: "question 1"
+        correctAnswer: ["Water, malt, hops, and yeast", "Bells Two Hearted Ale", "3"]
   },
   {
-    question: "is this question 2",
+    question: "What beer was currently awarded best beer in america",
      incorrect: [
-      "1",
-      "1",
-      "1",
+      "dogfish 60 minute IPA",
+      "Pliney The Elder",
+      "Bud Lite",
   ],
-    correctAnswer: "question 2"
+    // correctAnswer: ["question 2"]
 },
         {
           question: "is this question 3",
@@ -75,7 +73,7 @@ myQuestions = [
             "2",
             "2",
         ],
-          correctAnswer: "question 3"
+          // correctAnswer: ["question 3"]
     }
       ];
 
