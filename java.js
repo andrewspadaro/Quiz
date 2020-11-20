@@ -39,8 +39,11 @@ possibleAnswers.innerHTML += "<li>" + myQuestions[0].incorrect[1] + "</li>"
 possibleAnswers.innerHTML += "<li>" + myQuestions[0].incorrect[2] + "</li>"
 possibleAnswers.innerHTML += "<li>" + myQuestions[0].correctAnswer[0] + "</li>"
 
-});
 
+
+
+
+});
 
     
     
