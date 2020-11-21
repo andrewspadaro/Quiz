@@ -25,6 +25,7 @@ startBtn.style.display = 'none'
   if(answerChoice === myQuestions[currentQuestion].correctAnswer) {
     alert('correct')
   } else {
+    alert('incorrect')
     incorrect++
   }
   currentQuestion++
@@ -47,7 +48,7 @@ function renderQuestion(num) {
 
 myQuestions = [
   {
-    question: "1. What are the 4 main ingredients in beer?",
+    question: "What are the 4 main ingredients in beer?",
     choices: [
       "carrots, potatoes, corn, and broccoli",
       "soda, rice, chips, and salt",
@@ -57,36 +58,25 @@ myQuestions = [
     correctAnswer: "Water, malt, hops, and yeast"
   },
   {
-    question: "2. What are the 4 main ingredients in beer?",
+    question: "What beer was currently awarded best craft beer in America for the year 2020",
     choices: [
-      "carrots, potatoes, corn, and broccoli",
-      "soda, rice, chips, and salt",
-      "popcorn, peanuts, dirty socks, and coffee beans",
-      "Water, malt, hops, and yeast"
+      "Dogfish Head 60 Minute IPA",
+      "Pliney The Elder",
+      "Bells Two Hearted Ale",
+      "Bud Lite"
     ],
-    correctAnswer: "Water, malt, hops, and yeast"
+    correctAnswer: "Bells Two Hearted Ale"
   },
   {
-    question: "3. What are the 4 main ingredients in beer?",
+    question: "Which city has the most craft breweries per capita",
     choices: [
-      "carrots, potatoes, corn, and broccoli",
-      "soda, rice, chips, and salt",
-      "popcorn, peanuts, dirty socks, and coffee beans",
-      "Water, malt, hops, and yeast"
+      "Portland, Maine",
+      "Chicago, Illanois",
+      "Boston, Massachusetts",
+      "Boulder, Colorado"
     ],
-    correctAnswer: "Water, malt, hops, and yeast"
+    correctAnswer: "Portland, Maine"
   },
-
-  // {
-  //   // question: "What beer was currently awarded best  craft beer in America for the year 2020",
-  //   // incorrect: [
-  //   //   "dogfish 60 minute IPA",
-  //   //   "Pliney The Elder",
-  //   //   "Bud Lite",
-  //   // ],
-  //   // correctAnswer: ["Bells Two Hearted Ale"]
-  // },
-  
 ];
 
 function countdown() {
